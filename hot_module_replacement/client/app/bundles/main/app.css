@@ -1,0 +1,9 @@
+body {
+  background-color: #ffc671;
+}
+
+:local(.app) {
+  background-color: #f3f3f3;
+  border: solid 1px #fff;
+  padding: 10px;
+}

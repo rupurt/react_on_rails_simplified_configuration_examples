@@ -9,7 +9,8 @@
   "scripts": {
     "build:test": "webpack --config webpack.config.js",
     "build:production": "NODE_ENV=production webpack --config webpack.config.js",
-    "build:development": "webpack -w --config webpack.config.js"
+    "build:development": "webpack -w --config webpack.config.js",
+    "build:server": "webpack-dev-server --config webpack.server.config.js"
   },
   "cacheDirectories": [
     "node_modules",
@@ -35,5 +36,8 @@
     "webpack": "^1.14.0",
     "webpack-sprockets-rails-manifest-plugin": "^0.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-hot-loader": "^3.0.0-beta.6",
+    "webpack-dev-server": "^1.16.3"
+  }
 }
