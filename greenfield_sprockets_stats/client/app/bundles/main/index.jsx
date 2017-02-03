@@ -11,7 +11,7 @@ const App = () =>
     </h1>
 
     <p>
-      Using the <a href="https://www.npmjs.com/package/webpack-sprockets-rails-manifest-plugin">webpack-sprockets-rails-manifest-plugin</a>
+      Using the <a href="https://www.npmjs.com/package/sprockets-stats-webpack-plugin">sprockets-stats-webpack-plugin</a>
     </p>
   </div>
 

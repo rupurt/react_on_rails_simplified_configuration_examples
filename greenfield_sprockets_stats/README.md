@@ -1,12 +1,14 @@
-# Webpack configuration for a Greenfield Rails Project
+# Webpack configuration for a Greenfield Sprockets Stats Rails Project
 
 * Add a [static location](config/initializers/assets.rb##L26) for the manifest file
 
-* [Add the `webpack-sprockets-rails-manifest-plugin` to `package.json`](client/package.json#L36)
+* [Add the `webpack-sprockets-rails-manifest-plugin` to `package.json`](client/package.json#L34)
 
-* [Configure the plugin](client/webpack.config.js#L36) within Webpack
+* [Add the `sri-stats-webpack-plugin` to `package.json`](client/package.json#L34)
 
-* Configure Webpack to [output the build](client/webpack.config.js#L22) to `public/assets`
+* [Configure the stats plugins](client/webpack.config.js#L37) within Webpack
+
+* Configure sprockets stats to [output the build and manifest](client/webpack.config.js#L43) to `public/assets`
 
 * [Render the bundle javascript](app/views/layouts/webpack_application.html.erb#L13) file that matches the bundle name with standard Rails view helpers
 
